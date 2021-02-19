@@ -1,34 +1,54 @@
+/*
+Colours:
+  background: #08050f;
+  header/footer : #060c28;
+  pink : #ba1e68;
+  purple:#7649fe;
+  blue/purple: #5643fd;
+  green: #5ebe75
+  dark green: #2D733D
+  Brown: #735632
+  Dark brown: #BF8C4B
+  off White : #fcfbfe;
+*/
+
 /*Global*/
 body{
-  background-color: #5ebe75;
+  background-color: #08050f;
+  color: #fcfbfe;
 }
 
 #root{
   max-width:1920px;
   margin:auto!important;
-  background-color: aliceblue;
+  background-color: #060c28;
 }
+
+
 
 /*Header*/
-header{
+header ,footer{
   max-width:1400px;
   margin:auto!important;
-  padding: 2% 0% 3%;
-  display: block;
+  padding: 2% 0%;
 }
 
+header{display:flex;}
+
 .Logo{
-  width: 20%;
-  display: inline-block;
-  float: left;
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*Navs*/
 .Nav{
   width: 77%;
-  display: inline-block;
-  float: left;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: end;
 }
 
 .Nav ul {
@@ -38,6 +58,67 @@ header{
 }
 
 .Nav ul li{
+  color:#fcfbfe; 
   display: inline;
-  padding: 0px 15px;
+  padding: 10px 17px;
+  background-color: #252528;
+}
+
+.Nav ul li:hover{
+  background-color: #3e3e3e;
+}
+
+.Nav ul li:last-child{
+  border-radius: 0px 25px 25px 0px;
+
+}
+
+.Nav ul li:first-child{
+border-radius: 25px 0px 0px 25px;
+
+}
+
+.Nav ul li a, .Socials ul li a{
+  color:#fcfbfe; 
+  text-decoration: none;
+}
+
+/*Home*/
+
+.Banner{
+  height:700px;
+  width:100%;
+}
+  
+.stars-wrapper {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50px;
+  animation: moveStars linear infinite;
+}
+
+.type-1 {
+  width: 1px;
+  height: 1px;
+}
+
+.type-2 {
+  width: 2px;
+  height: 2px;
+}
+
+.type-3 {
+  width: 3px;
+  height: 3px;
+}
+
+@keyframes moveStars {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-150px); }
+  100% { transform: translateY(0); }
 }

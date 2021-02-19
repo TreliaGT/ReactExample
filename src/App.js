@@ -50,6 +50,26 @@ class App extends Component {
                 <NotFound/>
               </Route>
             </Switch>
+            <footer>
+              <div className="Top">
+                <div class="Info">
+
+                </div>
+                <div class="Socials">
+                  <ul>
+                    <li>
+                      <Link to="/">Linkedin</Link>
+                    </li>
+                    <li>
+                      <Link to="/">GitHub</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="Legal">
+                <p><span>© 2020 Copyright | Created by GG</span></p>
+              </div>
+            </footer>
           </div>
         </Router>
         );
