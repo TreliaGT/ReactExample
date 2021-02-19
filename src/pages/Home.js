@@ -7,7 +7,7 @@ function CreateStars(type, qty ) {
         let star = document.createElement('div');
         star.classList.add('star', 'type-' + type);
         star.style.left = RandomNumber(1, 99) + '%';
-        star.style.bottom = RandomNumber(1, 99) + '%';
+        star.style.bottom = RandomNumber(300, 600) + 'px';
         star.style.animationDuration = RandomNumber(50, 200) + 's';
         document.getElementById('stars-wrapper').appendChild(star);
     }
