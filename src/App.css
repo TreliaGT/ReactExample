@@ -86,13 +86,13 @@ border-radius: 25px 0px 0px 25px;
 /*Home*/
 
 .Banner{
-  height:700px;
+  height:500px;
   width:100%;
 }
   
 .stars-wrapper {
   min-width: 100%;
-  min-height: 700px;
+  min-height: 500px;
 }
 
 .star {
