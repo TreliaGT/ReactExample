@@ -8,6 +8,8 @@ import {
     Route,
     Link,
   } from "react-router-dom";
+import logo from './logo.svg';
+
 
 class App extends Component {
     constructor() {
@@ -21,7 +23,7 @@ class App extends Component {
           <div className="App">
             <header>
               <div className="Logo">
-                  <img src="../logo.svg"/>
+                  <img src={logo}/>
               </div>
               <div className="Nav">
                 <ul>
