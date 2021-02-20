@@ -26,6 +26,50 @@ function Stars(){
         CreateStars(3, 70 );
 }
 
+function Words (){
+      // config
+    const fontMin = 15; //px
+    const fontMax = 35; //px
+    const valueAttributeName = 'tag-value'; // tag in which we puted value
+    const tagsSelector = '[tag-value]'; // tags elemnts selector
+    const computeColor = true; // flag, if true color will be computed with size
+
+    // mechanism
+    const values = [];
+    document.querySelectorAll(tagsSelector).forEach(tag => {
+      const tagValue = tag.getAttribute(valueAttributeName);
+
+      values.push({
+        el: tag,
+        val: Number(tagValue)
+      })
+    });
+
+    const valuesSorted = values.sort((a, b) => a.val - b.val);
+    const valueMax = valuesSorted[valuesSorted.length-1].val;
+
+    valuesSorted.forEach(x => {
+      const { val, el } = x;
+
+      const fontSize = Math.floor(
+        (val/valueMax) * (fontMax-fontMin+1) + fontMin
+      );
+
+      if (computeColor) {
+        const color = Math
+        .abs(
+          Math.floor(((val/valueMax) * 200) - 200)
+        )
+        .toString(16)
+        .repeat(3);
+
+        el.style.color = `#${color}`;
+      }
+
+      el.style.fontSize = `${fontSize}px`;
+    });
+}
+
 
 class Home extends Component {
     constructor(props) {
@@ -36,13 +80,14 @@ class Home extends Component {
 
     componentDidMount() {
         Stars();
+        Words();
        }
 
     render() {
         return (
                 <div className="container">
                     <div className="Home">
-                        <div className="Banner">
+                        <section className="Banner">
                             <div className="introText">
                                 <h1>Welcome Text</h1>
                                 <p>
@@ -51,20 +96,129 @@ class Home extends Component {
                                 </p>
                             </div>
                             <div Ref={this.myInput} id="stars-wrapper" className="stars-wrapper"></div>
-                        </div>
-                        <div className="Definer">
-                            <a href="#">
+                        </section>
+                        <section className="Definer">
+                            <a href="#Secondsection">
                             <FontAwesomeIcon icon={faChevronDown}/>
                             </a>
-                        </div>
-                        <div class="Secondsection">
-                          <div class="Text">
+                        </section>
+                        <section className="Secondsection" id="Secondsection">
+                          <div className="Text">
+                              <h2>Intro Text</h2>
+                              <p> <strong>Bonbon topping jujubes. Chocolate bar muffin chupa chups chocolate cake cookie carrot cake brownie. Bear claw carrot cake bonbon tart.
+                              Gummi bears tiramisu donut donut muffin cupcake. Tootsie roll fruitcake jelly-o chocolate cake.</strong></p>
+                              <p>
+                               Sesame snaps cake chupa chups gummies cotton candy caramels chupa chups danish. Chocolate candy bonbon pudding halvah cheesecake candy. Tart jelly chocolate cake biscuit liquorice. Sweet gingerbread chupa chups carrot cake donut oat cake fruitcake. Jelly-o powder pie brownie.
+                               Gummi bears gummi bears apple pie ice cream cake. Wafer icing carrot cake tootsie roll muffin. Sugar plum marshmallow cheesecake. Gingerbread ice cream jujubes cupcake marzipan cotton candy cupcake sesame snaps. Ice cream powder danish. Apple pie oat cake toffee ice cream wafer dessert candy. Sesame snaps cookie lemon drops
+                               </p>
+                               <h3>Second title</h3>
+                              <p>Oat cake cake donut carrot cake soufflé. Lollipop gummies dragée marzipan icing croissant candy. Carrot cake chocolate biscuit halvah tiramisu. Jujubes topping macaroon halvah oat cake. Chocolate bar pudding tiramisu danish cheesecake marzipan cake jelly beans. Gummi bears dessert dessert chocolate bar dragée sesame snaps. Soufflé powder chocolate bar. Liquorice chocolate bar oat cake. Pastry gummies powder icing gingerbread gummies cotton candy chocolate cake pie. Danish soufflé donut cookie gummies cotton candy cheesecake macaroon. </p>
+                              <h3>Second title</h3>
+                             <p>Oat cake cake donut carrot cake soufflé. Lollipop gummies dragée marzipan icing croissant candy. Carrot cake chocolate biscuit halvah tiramisu. Jujubes topping macaroon halvah oat cake. Chocolate bar pudding tiramisu danish cheesecake marzipan cake jelly beans. Gummi bears dessert dessert chocolate bar dragée sesame snaps. Soufflé powder chocolate bar. Liquorice chocolate bar oat cake. Pastry gummies powder icing gingerbread gummies cotton candy chocolate cake pie. Danish soufflé donut cookie gummies cotton candy cheesecake macaroon. </p>
                           </div>
-                          <div class="Data">
+                          <div className="Data">
+                          <div className="dashboard">
+                          <div className="lang">
+                              <svg>
+                                 <text fill="#ffffff" font-size="14" font-family="Verdana" x="37" y="66">HTML</text>
+                                <circle className="bg" cx="57" cy="57" r="52" />
+                                <circle className="meter-1" cx="57" cy="57" r="52" />
+                              </svg>
+                              <p>Liquorice marshmallow biscuit pie lemon drops fruitcake sugar plum pudding candy canes. Sweet roll chocolate chocolate bar
+                              gummi bears cotton candy chupa chups.</p>
                           </div>
+                            <div className="lang">
+                            <svg>
+                              <text fill="#ffffff" font-size="14" font-family="Verdana" x="20" y="66">CSS/SASS</text>
+                              <circle className="bg" cx="57" cy="57" r="52" />
+                              <circle className="meter-2" cx="57" cy="57" r="52" />
+                            </svg>
+                            <p>Liquorice marshmallow biscuit pie lemon drops fruitcake sugar plum pudding candy canes. Sweet roll chocolate chocolate bar
+                            gummi bears cotton candy chupa chups.</p>
+                            </div>
+                              <div className="lang">
+                            <svg>
+                            <text fill="#ffffff" font-size="14" font-family="Verdana" x="48" y="66">JS</text>
+                              <circle className="bg" cx="57" cy="57" r="52" />
+                              <circle className="meter-3" cx="57" cy="57" r="52" />
+                            </svg>
+                            <p>Liquorice marshmallow biscuit pie lemon drops fruitcake sugar plum pudding candy canes. Sweet roll chocolate chocolate bar
+                            gummi bears cotton candy chupa chups.</p>
+                            </div>
+                              <div className="lang">
+                            <svg>
+                            <text fill="#ffffff" font-size="14" font-family="Verdana" x="43" y="66">PHP</text>
+                              <circle className="bg" cx="57" cy="57" r="52" />
+                              <circle className="meter-4" cx="57" cy="57" r="52" />
+                            </svg>
+                            <p>Liquorice marshmallow biscuit pie lemon drops fruitcake sugar plum pudding candy canes. Sweet roll chocolate chocolate bar
+                            gummi bears cotton candy chupa chups.</p>
+                            </div>
+                              <div className="lang">
+                            <svg>
+                            <text fill="#ffffff" font-size="14" font-family="Verdana" x="42" y="66">Java</text>
+                              <circle className="bg" cx="57" cy="57" r="52" />
+                              <circle className="meter-5" cx="57" cy="57" r="52" />
+                            </svg>
+                            <p>Liquorice marshmallow biscuit pie lemon drops fruitcake sugar plum pudding candy canes. Sweet roll chocolate chocolate bar
+                            gummi bears cotton candy chupa chups. </p>
+                            </div>
+                              <div className="lang">
+                            <svg>
+                            <text fill="#ffffff" font-size="14" font-family="Verdana" x="48" y="66">C#</text>
+                              <circle className="bg" cx="57" cy="57" r="52" />
+                              <circle className="meter-6" cx="57" cy="57" r="52" />
+                            </svg>
+                            <p>Liquorice marshmallow biscuit pie lemon drops fruitcake sugar plum pudding candy canes. Sweet roll chocolate chocolate bar
+                            gummi bears cotton candy chupa chups.</p>
+                            </div>
+                              <div className="lang">
+                            <svg>
+                            <text fill="#ffffff" font-size="14" font-family="Verdana" x="34" y="66">Python</text>
+                              <circle className="bg" cx="57" cy="57" r="52" />
+                              <circle className="meter-7" cx="57" cy="57" r="52" />
+                            </svg>
+                            <p>Liquorice marshmallow biscuit pie lemon drops fruitcake sugar plum pudding candy canes. Sweet roll chocolate chocolate bar
+                            gummi bears cotton candy chupa chups.</p>
+                            </div>
+                          </div>
+                          </div>
+                        </section>
+
+                        <section className="thirdSection">
+                            <h2>Latest Projects</h2>
+                            <div className="Projects">
+                              <div className="project">
+                              </div>
+                              <div className="project">
+                              </div>
+                              <div className="project">
+                              </div>
+                              <div className="project">
+                              </div>
+                            </div>
+                        </section>
+                        <section className="fourthSection">
+                        <div className="cloud">
+                          <div className="tag-cloud">
+                            <div tag-value="3">Lorem</div>
+                            <div tag-value="8">Asperiores</div>
+                            <div tag-value="4">Porro</div>
+                            <div tag-value="1">Harum</div>
+                            <div tag-value="9">Eligendi</div>
+                            <div tag-value="6">Rerum</div>
+                            <div tag-value="4">Deleniti</div>
+                            <div tag-value="5">Cupiditate</div>
+                            <div tag-value="1">Quo</div>
+                            <div tag-value="8">Ratione</div>
+                            <div tag-value="8">Incidunt</div>
+                            <div tag-value="2">Odio</div>
+                          </div>
+                          </div>
+                        </section>
                         </div>
                     </div>
-                </div>
+
         );
 
     }
