@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import HomePage from './pages/Home';
 import NotFound from './pages/Error404';
+import About from './pages/About';
 import {
     BrowserRouter as Router,
     Switch,
@@ -14,7 +15,6 @@ class App extends Component {
     constructor() {
         super();
     }
-
 
     render() {
         return (
@@ -30,13 +30,13 @@ class App extends Component {
                     <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <Link to="/">About</Link>
+                    <Link to="/about">About</Link>
                   </li>
                   <li>
-                    <Link to="/">Projects</Link>
+                    <Link to="/projects">Projects</Link>
                   </li>
                   <li>
-                    <Link to="/">Contact</Link>
+                    <Link to="/Contact">Contact</Link>
                   </li>
                 </ul>
               </div>
@@ -44,6 +44,9 @@ class App extends Component {
             <Switch>
               <Route path="/">
                 <HomePage/>
+              </Route>
+              <Route path="/about">
+                <About/>
               </Route>
               <Route path="*">
                 <NotFound/>
