@@ -1,13 +1,16 @@
 import React, {Component , useEffect} from 'react';
 
 import '../App.css';
+import  {FontAwesomeIcon}  from '@fortawesome/react-fontawesome';
+import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
+
 
 function CreateStars(type, qty ) {
     for(let i = 0; i < qty; i++) {
         let star = document.createElement('div');
         star.classList.add('star', 'type-' + type);
         star.style.left = RandomNumber(1, 99) + '%';
-        star.style.bottom = RandomNumber(300, 600) + 'px';
+        star.style.bottom = RandomNumber(30, 600) + 'px';
         star.style.animationDuration = RandomNumber(50, 200) + 's';
         document.getElementById('stars-wrapper').appendChild(star);
     }
@@ -28,24 +31,42 @@ class Home extends Component {
     constructor(props) {
         super(props);
         this.myInput = React.createRef();
-    
+
     }
 
-    componentDidMount() {  
-        Stars(); 
+    componentDidMount() {
+        Stars();
        }
-    
+
     render() {
         return (
                 <div className="container">
                     <div className="Home">
                         <div className="Banner">
+                            <div className="introText">
+                                <h1>Welcome Text</h1>
+                                <p>
+                                  Fruitcake cake brownie. Pastry cookie macaroon sugar plum cake danish chocolate toffee.
+                                  Lemon drops chocolate bar tootsie roll. Chupa chups halvah cotton candy danish liquorice.
+                                </p>
+                            </div>
                             <div Ref={this.myInput} id="stars-wrapper" className="stars-wrapper"></div>
+                        </div>
+                        <div className="Definer">
+                            <a href="#">
+                            <FontAwesomeIcon icon={faChevronDown}/>
+                            </a>
+                        </div>
+                        <div class="Secondsection">
+                          <div class="Text">
+                          </div>
+                          <div class="Data">
+                          </div>
                         </div>
                     </div>
                 </div>
         );
-        
+
     }
 }
 

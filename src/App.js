@@ -10,7 +10,6 @@ import {
   } from "react-router-dom";
 import logo from './logo.svg';
 
-
 class App extends Component {
     constructor() {
         super();

@@ -49,6 +49,7 @@ header{display:flex;}
   flex-direction: column;
   justify-content: center;
   text-align: end;
+  z-index: 999;
 }
 
 .Nav ul {
@@ -58,7 +59,7 @@ header{display:flex;}
 }
 
 .Nav ul li{
-  color:#fcfbfe; 
+  color:#fcfbfe;
   display: inline;
   padding: 10px 17px;
   background-color: #252528;
@@ -79,23 +80,25 @@ border-radius: 25px 0px 0px 25px;
 }
 
 .Nav ul li a, .Socials ul li a{
-  color:#fcfbfe; 
+  color:#fcfbfe;
   text-decoration: none;
 }
 
 /*Home*/
 
 .Banner{
-  height:500px;
-  width:100%;
+  height: 600px;
+  width: 100%;
+  position: relative;
 }
-  
+
 .stars-wrapper {
   min-width: 100%;
   min-height: 500px;
 }
 
 .star {
+  z-index: 0;
   position: absolute;
   background-color: white;
   border-radius: 50px;
@@ -121,4 +124,31 @@ border-radius: 25px 0px 0px 25px;
   0% { transform: translateY(0); }
   50% { transform: translateY(-150px); }
   100% { transform: translateY(0); }
+}
+
+
+.introText {
+    max-width: 455px;
+    width: 80%;
+    left: 6%;
+    padding: 3%;
+    position: absolute;
+    top: 41%;
+    transform: translate(0, -50%);
+    background-color: #08050fa8;
+    z-index: 1;
+}
+
+
+.Definer {
+    padding: 1%;
+    margin: auto;
+    text-align: center;
+    background-color: #08050fa8;
+}
+
+.Definer a{
+  color :#fcfbfe;
+  font-size:25px;
+
 }
