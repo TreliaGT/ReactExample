@@ -51,10 +51,7 @@ class App extends Component {
             </Switch>
             <footer>
               <div className="Top">
-                <div class="Info">
-
-                </div>
-                <div class="Socials">
+                <div className="Socials">
                   <ul>
                     <li>
                       <Link to="/">Linkedin</Link>
