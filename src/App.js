@@ -42,11 +42,11 @@ class App extends Component {
               </div>
             </header>
             <Switch>
+            <Route path="/about">
+                <About/>
+              </Route>
               <Route path="/">
                 <HomePage/>
-              </Route>
-              <Route path="/about">
-                <About/>
               </Route>
               <Route path="*">
                 <NotFound/>
