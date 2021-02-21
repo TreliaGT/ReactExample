@@ -13,6 +13,7 @@ class About extends Component {
               </section>
               <section className="aboutUs">
                 <div className="image">
+                  <img src={image}/>
                 </div>
                 <div className="Text">
                   <h1>About Title</h1>
@@ -33,6 +34,8 @@ class About extends Component {
                     </ul>
                   </div>
                 </div>
+              </section>
+              <section class="reviews">
               </section>
             </div>
         );

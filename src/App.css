@@ -375,3 +375,24 @@ section.thirdSection {
 .tag-cloud  div:hover{
     color: #ba1e68 !important;
 }
+
+
+/*about*/
+.InteralPage{
+  margin: auto;
+}
+section.smBanner {
+    height: 150px;
+    background-color: black;
+    margin-bottom: 4%;
+}
+
+section.aboutUs {
+    width: 100%;
+    max-width: 1400px;
+    margin:auto;
+    display: flex;
+}
+section.aboutUs .Text{
+  padding-top: 0px;
+}
