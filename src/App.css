@@ -92,6 +92,22 @@ footer .Top .Socials ul li{
   text-align: end;
   z-index: 999;
 }
+.Nav .NavLink {
+  padding: 10px 17px;
+  background-color: #252528;
+}
+
+.Nav .NavLink:hover {
+  background-color: #3e3e3e;
+}
+
+.Nav .NavLink.NavFirst{
+  border-radius: 25px 0px 0px 25px;
+}
+
+.Nav .NavLink.NavLast {
+  border-radius: 0px 25px 25px 0px;
+}
 
 .Nav ul {
   list-style-type: none;
@@ -102,22 +118,7 @@ footer .Top .Socials ul li{
 .Nav ul li{
   color:#fcfbfe;
   display: inline;
-  padding: 10px 17px;
-  background-color: #252528;
-}
-
-.Nav ul li:hover{
-  background-color: #3e3e3e;
-}
-
-.Nav ul li:last-child{
-  border-radius: 0px 25px 25px 0px;
-
-}
-
-.Nav ul li:first-child{
-border-radius: 25px 0px 0px 25px;
-
+  padding: 0;
 }
 
 .Nav ul li a, .Socials ul li a{

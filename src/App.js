@@ -27,26 +27,26 @@ class App extends Component {
               <div className="Nav">
                 <ul>
                   <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/" className="NavLink NavFirst">Home</Link>
                   </li>
                   <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/about" className="NavLink">About</Link>
                   </li>
                   <li>
-                    <Link to="/projects">Projects</Link>
+                    <Link to="/projects" className="NavLink">Projects</Link>
                   </li>
                   <li>
-                    <Link to="/Contact">Contact</Link>
+                    <Link to="/Contact" className="NavLink NavLast">Contact</Link>
                   </li>
                 </ul>
               </div>
             </header>
             <Switch>
-            <Route path="/about">
-              <About/>
-            </Route>
               <Route path="/">
                 <HomePage/>
+              </Route>
+              <Route path="/about">
+                <About/>
               </Route>
               <Route path="*">
                 <NotFound/>
