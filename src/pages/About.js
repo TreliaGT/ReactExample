@@ -9,14 +9,14 @@ class About extends Component {
         return (
             <div className="InteralPage">
               <section className="smBanner">
-
+                  <h1>About Us</h1>
               </section>
               <section className="aboutUs">
                 <div className="image">
                   <img src={image}/>
                 </div>
                 <div className="Text">
-                  <h1>About Title</h1>
+                  <h2>Title</h2>
                   <p> <strong>Bonbon topping jujubes. Chocolate bar muffin chupa chups chocolate cake cookie carrot cake brownie. Bear claw carrot cake bonbon tart.
                   Gummi bears tiramisu donut donut muffin cupcake. Tootsie roll fruitcake jelly-o chocolate cake.</strong></p>
                   <p>

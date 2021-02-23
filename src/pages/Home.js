@@ -94,6 +94,9 @@ class Home extends Component {
                                   Lemon drops chocolate bar tootsie roll. Chupa chups halvah cotton candy danish liquorice.
                                 </p>
                             </div>
+                            <div class="BannerImage">
+                              <img src={image}/>
+                            </div>
                             <div id="stars-wrapper" className="stars-wrapper"></div>
                         </section>
                         <section className="Definer">
@@ -101,6 +104,20 @@ class Home extends Component {
                             <FontAwesomeIcon icon={faChevronDown}/>
                             </a>
                         </section>
+                        <section class="into-Text">
+                        <div class="image">
+                                 <img src={image}/>
+                            </div>
+                          <div className="Text">
+                                <h2>Intro Text</h2>
+                                <p> <strong>Bonbon topping jujubes. Chocolate bar muffin chupa chups chocolate cake cookie carrot cake brownie. Bear claw carrot cake bonbon tart.
+                                Gummi bears tiramisu donut donut muffin cupcake. Tootsie roll fruitcake jelly-o chocolate cake.</strong></p>
+                                <p>
+                                Sesame snaps cake chupa chups gummies cotton candy caramels chupa chups danish. Chocolate candy bonbon pudding halvah cheesecake candy. Tart jelly chocolate cake biscuit liquorice. Sweet gingerbread chupa chups carrot cake donut oat cake fruitcake. Jelly-o powder pie brownie.
+                                Gummi bears gummi bears apple pie ice cream cake. Wafer icing carrot cake tootsie roll muffin. Sugar plum marshmallow cheesecake. Gingerbread ice cream jujubes cupcake marzipan cotton candy cupcake sesame snaps. Ice cream powder danish. Apple pie oat cake toffee ice cream wafer dessert candy. Sesame snaps cookie lemon drops
+                                </p>
+                            </div>
+                          </section>
                         <section className="Secondsection" id="Secondsection">
                           <div className="Data">
                           <div className="dashboard">
@@ -168,19 +185,6 @@ class Home extends Component {
                             gummi bears cotton candy chupa chups.</p>
                             </div>
                           </div>
-                          </div>
-                          <div className="Text">
-                              <h2>Intro Text</h2>
-                              <p> <strong>Bonbon topping jujubes. Chocolate bar muffin chupa chups chocolate cake cookie carrot cake brownie. Bear claw carrot cake bonbon tart.
-                              Gummi bears tiramisu donut donut muffin cupcake. Tootsie roll fruitcake jelly-o chocolate cake.</strong></p>
-                              <p>
-                               Sesame snaps cake chupa chups gummies cotton candy caramels chupa chups danish. Chocolate candy bonbon pudding halvah cheesecake candy. Tart jelly chocolate cake biscuit liquorice. Sweet gingerbread chupa chups carrot cake donut oat cake fruitcake. Jelly-o powder pie brownie.
-                               Gummi bears gummi bears apple pie ice cream cake. Wafer icing carrot cake tootsie roll muffin. Sugar plum marshmallow cheesecake. Gingerbread ice cream jujubes cupcake marzipan cotton candy cupcake sesame snaps. Ice cream powder danish. Apple pie oat cake toffee ice cream wafer dessert candy. Sesame snaps cookie lemon drops
-                               </p>
-                               <h3>Second title</h3>
-                              <p>Oat cake cake donut carrot cake soufflé. Lollipop gummies dragée marzipan icing croissant candy. Carrot cake chocolate biscuit halvah tiramisu. Jujubes topping macaroon halvah oat cake. Chocolate bar pudding tiramisu danish cheesecake marzipan cake jelly beans. Gummi bears dessert dessert chocolate bar dragée sesame snaps. Soufflé powder chocolate bar. Liquorice chocolate bar oat cake. Pastry gummies powder icing gingerbread gummies cotton candy chocolate cake pie. Danish soufflé donut cookie gummies cotton candy cheesecake macaroon. </p>
-                              <h3>Second title</h3>
-                             <p>Oat cake cake donut carrot cake soufflé. Lollipop gummies dragée marzipan icing croissant candy. Carrot cake chocolate biscuit halvah tiramisu. Jujubes topping macaroon halvah oat cake. Chocolate bar pudding tiramisu danish cheesecake marzipan cake jelly beans. Gummi bears dessert dessert chocolate bar dragée sesame snaps. Soufflé powder chocolate bar. Liquorice chocolate bar oat cake. Pastry gummies powder icing gingerbread gummies cotton candy chocolate cake pie. Danish soufflé donut cookie gummies cotton candy cheesecake macaroon. </p>
                           </div>
                         </section>
 
