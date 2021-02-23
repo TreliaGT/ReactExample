@@ -426,7 +426,7 @@ section.smBanner {
     height: 150px;
     margin-bottom: 4%;
     background-image: linear-gradient( #1e3188, #ba1e68);
-    box-shadow: 5px 5px 20px rgb(79, 78, 78);
+    box-shadow: 5px 5px 20px #3b3b3c;
     display: flex;
     justify-content: center;
 }
@@ -465,12 +465,15 @@ section.aboutUs .Text{
   max-width: 1020px;
   padding: 40px 20px;
   margin: auto;
+  background-color: #08050f;
+  border-radius: 24px;
+  box-shadow: 11px 12px 15px #3b3b3c;
 }
 
 .testim .arrow {
   display: block;
   position: absolute;
-  color: #eee;
+  color: #fcfbfe;
   cursor: pointer;
   font-size: 2em;
   top: 50%;
@@ -1041,7 +1044,39 @@ body {
 .tabinfo{
   display: flex;
 }
-.tabcontent{width: 80%;}
+
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+.tabcontent{width: 80%;
+animation: fadeIn ease 5s;
+-webkit-animation: fadeIn ease 5s;
+-moz-animation: fadeIn ease 5s;
+-o-animation: fadeIn ease 5s;
+-ms-animation: fadeIn ease 5s;}
 
 .tabcontent .image {
   float: right;
@@ -1095,4 +1130,32 @@ body {
   display: none;
   padding: 6px 12px;
   border-top: none;
+}
+
+
+
+
+.placeholder{
+  display:inline-block;
+  width:800px;
+  height:600px;
+  box-sizing:border-box;
+  margin-top:40px;
+  position:relative;
+}
+
+.column, .blind, .blindImg{
+  position:absolute;
+  top:0;
+  height:100%;
+  box-sizing:border-box;
+}
+
+.blind{
+  overflow:hidden;
+}
+
+.blindImg{
+  width:100%;
+  background-size:cover;
 }

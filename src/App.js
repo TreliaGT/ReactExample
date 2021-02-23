@@ -3,6 +3,7 @@ import './App.css';
 import HomePage from './pages/Home';
 import NotFound from './pages/Error404';
 import About from './pages/About';
+import Portfolio from './pages/Portfolio';
 import {
     BrowserRouter as Router,
     Switch,
@@ -33,7 +34,7 @@ class App extends Component {
                     <Link to="/about" className="NavLink">About</Link>
                   </li>
                   <li>
-                    <Link to="/projects" className="NavLink">Projects</Link>
+                    <Link to="/portfolio" className="NavLink">Portfolio</Link>
                   </li>
                   <li>
                     <Link to="/Contact" className="NavLink NavLast">Contact</Link>
@@ -42,8 +43,11 @@ class App extends Component {
               </div>
             </header>
             <Switch>
-            <Route path="/about">
+              <Route path="/about">
                 <About/>
+              </Route>
+              <Route path="/portfolio">
+                <Portfolio/>
               </Route>
               <Route path="/">
                 <HomePage/>

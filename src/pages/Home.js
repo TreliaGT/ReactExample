@@ -189,7 +189,7 @@ class Home extends Component {
                         </section>
 
                         <section className="thirdSection">
-                            <h2>Latest Projects</h2>
+                            <h2>Latest Portfolio Items</h2>
                             <div className="Projects">
                               <div className="project">
                                   <img src={image}/>
