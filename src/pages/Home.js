@@ -123,7 +123,7 @@ class Home extends Component {
                           <div className="dashboard">
                           <div className="lang">
                               <svg>
-                                 <text fill="#ffffff" fontSize="14" fontFamily="DotGothic16" x="46" y="66">HTML</text>
+                                 <text fill="#ffffff" fontSize="14" letterSpacing="3.5"  fontFamily="DotGothic16" x="36" y="66">HTML</text>
                                 <circle className="bg" cx="57" cy="57" r="52" />
                                 <circle className="meter-1" cx="57" cy="57" r="52" />
                               </svg>
@@ -132,7 +132,7 @@ class Home extends Component {
                           </div>
                             <div className="lang">
                             <svg>
-                              <text fill="#ffffff" fontSize="14" fontFamily="DotGothic16" x="30" y="66">CSS/SASS</text>
+                              <text fill="#ffffff" fontSize="14" letterSpacing="3.5"  fontFamily="DotGothic16" x="18" y="66">CSS/SASS</text>
                               <circle className="bg" cx="57" cy="57" r="52" />
                               <circle className="meter-2" cx="57" cy="57" r="52" />
                             </svg>
@@ -141,7 +141,7 @@ class Home extends Component {
                             </div>
                               <div className="lang">
                             <svg>
-                            <text fill="#ffffff" fontSize="14" fontFamily="DotGothic16" x="48" y="66">JS</text>
+                            <text fill="#ffffff" fontSize="14" letterSpacing="3.5"  fontFamily="DotGothic16" x="48" y="66">JS</text>
                               <circle className="bg" cx="57" cy="57" r="52" />
                               <circle className="meter-3" cx="57" cy="57" r="52" />
                             </svg>
@@ -150,7 +150,7 @@ class Home extends Component {
                             </div>
                               <div className="lang">
                             <svg>
-                            <text fill="#ffffff" fontSize="14" fontFamily="DotGothic16" x="43" y="66">PHP</text>
+                            <text fill="#ffffff" fontSize="14" letterSpacing="3.5"  fontFamily="DotGothic16" x="43" y="66">PHP</text>
                               <circle className="bg" cx="57" cy="57" r="52" />
                               <circle className="meter-4" cx="57" cy="57" r="52" />
                             </svg>
@@ -159,7 +159,7 @@ class Home extends Component {
                             </div>
                               <div className="lang">
                             <svg>
-                            <text fill="#ffffff" fontSize="14" fontFamily="DotGothic16" x="42" y="66">Java</text>
+                            <text fill="#ffffff" fontSize="14" letterSpacing="3.5"  fontFamily="DotGothic16" x="42" y="66">Java</text>
                               <circle className="bg" cx="57" cy="57" r="52" />
                               <circle className="meter-5" cx="57" cy="57" r="52" />
                             </svg>
@@ -168,7 +168,7 @@ class Home extends Component {
                             </div>
                               <div className="lang">
                             <svg>
-                            <text fill="#ffffff" fontSize="14" fontFamily="DotGothic16" x="48" y="66">C#</text>
+                            <text fill="#ffffff" fontSize="14" letterSpacing="3.5"  fontFamily="DotGothic16" x="48" y="66">C#</text>
                               <circle className="bg" cx="57" cy="57" r="52" />
                               <circle className="meter-6" cx="57" cy="57" r="52" />
                             </svg>
@@ -177,7 +177,7 @@ class Home extends Component {
                             </div>
                               <div className="lang">
                             <svg>
-                            <text fill="#ffffff" fontSize="14" fontFamily="DotGothic16" x="34" y="66">Python</text>
+                            <text fill="#ffffff" fontSize="14" letterSpacing="3.5"  fontFamily="DotGothic16" x="34" y="66">Python</text>
                               <circle className="bg" cx="57" cy="57" r="52" />
                               <circle className="meter-7" cx="57" cy="57" r="52" />
                             </svg>

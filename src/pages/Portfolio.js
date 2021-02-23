@@ -10,8 +10,8 @@ function Photo(){
         imgSrc1:"//s3-us-west-2.amazonaws.com/s.cdpn.io/261873/TelephoneBanana.jpg",
         imgSrc2:"//s3-us-west-2.amazonaws.com/s.cdpn.io/261873/TelephoneBananaInverted.jpg",
         containerName : "placeholder",
-        columns:25,
-        margin:2
+        columns:28,
+        margin:0
     }
   VenetianBlinds(options);
 }
@@ -79,9 +79,8 @@ function Photo(){
           gsap.set(column, {transformStyle:"preserve-3d", transformPerspective:1000, rotationY:0});
         
          column.addEventListener("mouseenter", function(event){
-              var elem = event.currentTarget;
-             
-             var rotY =  gsap.getProperty(elem, "rotationY");
+            var elem = event.currentTarget; 
+            var rotY =  gsap.getProperty(elem, "rotationY");
            
               if(directionX > 0){
                 gsap.to(elem, 1, {rotationY:Math.floor(rotY/90)*90+90, transformOrigin:"50% 50% -" + colW/2, ease:"Back.easeOut"});
@@ -112,14 +111,14 @@ class App extends Component {
         return (
             <div className="InteralPage">
                 <section className="smBanner">
-                  <h1>Portfolio</h1>
+                  <h1>Portfolio </h1>
                 </section>
                 <section className="aboutUs">
                 <div className="image">
                     <div className="placeholder"></div>
                 </div>
                 <div className="Text">
-                  <h1>Porfilio</h1>
+                  <h1>Portfolio</h1>
                   <p> <strong>Bonbon topping jujubes. Chocolate bar muffin chupa chups chocolate cake cookie carrot cake brownie. Bear claw carrot cake bonbon tart.
                   Gummi bears tiramisu donut donut muffin cupcake. Tootsie roll fruitcake jelly-o chocolate cake.</strong></p>
                   <p>
