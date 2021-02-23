@@ -177,7 +177,7 @@ class Home extends Component {
                             </div>
                               <div className="lang">
                             <svg>
-                            <text fill="#ffffff" fontSize="14" letterSpacing="3.5"  fontFamily="DotGothic16" x="34" y="66">Python</text>
+                            <text fill="#ffffff" fontSize="14" letterSpacing="3.5"  fontFamily="DotGothic16" x="30" y="66">Python</text>
                               <circle className="bg" cx="57" cy="57" r="52" />
                               <circle className="meter-7" cx="57" cy="57" r="52" />
                             </svg>
