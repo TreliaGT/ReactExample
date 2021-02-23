@@ -1035,10 +1035,12 @@ body {
 .tabsinfo {
   max-width: 1400px;
   margin: auto;
-  display: flex;
   padding: 5% 0 0%;
 }
 
+.tabinfo{
+  display: flex;
+}
 .tabcontent{width: 80%;}
 
 .tabcontent .image {

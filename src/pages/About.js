@@ -165,6 +165,8 @@ class About extends Component {
                 </div>
               </section>
               <section className="tabsinfo">
+              <h2>Further Information</h2>
+              <div className="tabinfo">
               <div className="tab">
                 <button className="tablinks active" onClick={(event) =>this.clickHandle( event ,'Personal')}>Personal</button>
                 <button className="tablinks" onClick={(event) =>this.clickHandle( event,'Education')}>Education</button>
@@ -206,7 +208,7 @@ class About extends Component {
                    </p>
                 </div>
             </div>
-
+            </div>
               </section>
               <section className="reviews">
               <div id="testim" className="testim">
@@ -255,6 +257,7 @@ class About extends Component {
             </div>
 
           </div>
+        
               </section>
             </div>
             
