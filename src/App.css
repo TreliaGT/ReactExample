@@ -1078,10 +1078,14 @@ body {
 
 /* Create an active/current tablink class */
 .tab button.active::before {
-  content: '.';
-  font-size: 35px;
-  color: #ba1e68;
-  vertical-align: baseline;
+    background-color: #ba1e68;
+    width: 10px;
+    content: "";
+    display: block;
+    height: 10px;
+    position: relative;
+    left: 2px;
+    top: 19px;
 }
 
 /* Style the tab content */
