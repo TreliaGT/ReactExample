@@ -128,7 +128,7 @@ class App extends Component {
                 </div>
               </section>
               <section className="thirdSection">
-                            <h2>Latest Portfolio Items</h2>
+                            <h2>Portfolio Items</h2>
                             <div className="Projects">
                               <div className="project">
                                   <img src={image}/>
@@ -136,6 +136,20 @@ class App extends Component {
                                     <h3>Project Name</h3>
                                     <p>Oat cake cake donut carrot cake soufflé. Lollipop gummies dragée marzipan icing croissant candy. Carrot cake chocolate biscuit halvah tiramisu. Jujubes topping macaroon halvah oat cake. Chocolate bar pudding tiramisu danish cheesecake marzipan cake jelly beans. Gummi bears dessert dessert chocolate bar dragée sesame snaps. Soufflé powder chocolate bar. Liquorice chocolate bar oat cake. Pastry gummies powder icing gingerbread gummies cotton candy chocolate cake pie. Danish soufflé donut cookie gummies cotton candy cheesecake macaroon. </p>
                                   </div>
+                              </div>
+                              <div className="project">
+                                <img src={image}/>
+                                <div>
+                                  <h3>Project Name</h3>
+                                  <p>Oat cake cake donut carrot cake soufflé. Lollipop gummies dragée marzipan icing croissant candy. Carrot cake chocolate biscuit halvah tiramisu. Jujubes topping macaroon halvah oat cake. Chocolate bar pudding tiramisu danish cheesecake marzipan cake jelly beans. Gummi bears dessert dessert chocolate bar dragée sesame snaps. Soufflé powder chocolate bar. Liquorice chocolate bar oat cake. Pastry gummies powder icing gingerbread gummies cotton candy chocolate cake pie. Danish soufflé donut cookie gummies cotton candy cheesecake macaroon. </p>
+                                </div>
+                              </div>
+                              <div className="project">
+                                <img src={image}/>
+                                <div>
+                                  <h3>Project Name</h3>
+                                  <p>Oat cake cake donut carrot cake soufflé. Lollipop gummies dragée marzipan icing croissant candy. Carrot cake chocolate biscuit halvah tiramisu. Jujubes topping macaroon halvah oat cake. Chocolate bar pudding tiramisu danish cheesecake marzipan cake jelly beans. Gummi bears dessert dessert chocolate bar dragée sesame snaps. Soufflé powder chocolate bar. Liquorice chocolate bar oat cake. Pastry gummies powder icing gingerbread gummies cotton candy chocolate cake pie. Danish soufflé donut cookie gummies cotton candy cheesecake macaroon. </p>
+                                </div>
                               </div>
                               <div className="project">
                                 <img src={image}/>

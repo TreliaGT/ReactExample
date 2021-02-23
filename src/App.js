@@ -11,6 +11,7 @@ import {
     Link,
   } from "react-router-dom";
 import logo from './logo.svg';
+import { AnimatePresence } from "framer-motion";
 
 class App extends Component {
     constructor() {
@@ -42,6 +43,7 @@ class App extends Component {
                 </ul>
               </div>
             </header>
+            <AnimatePresence>
             <Switch>
               <Route path="/about">
                 <About/>
@@ -56,6 +58,7 @@ class App extends Component {
                 <NotFound/>
               </Route>
             </Switch>
+            </AnimatePresence>
             <footer>
               <div className="Top">
                 <div className="Socials">
