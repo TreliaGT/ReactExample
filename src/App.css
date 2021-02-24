@@ -1173,3 +1173,39 @@ animation: fadeIn ease 2s;
   width:100%;
   background-size:cover;
 }
+
+
+.Contact {
+  width: 50%;
+}
+
+.Contact input[type="text"], .Contact input[type="email"], .Contact textarea {
+  outline: none;
+  box-shadow:none !important;
+  border: none;
+  border-bottom: 1px solid #ba1e68; 
+  border-radius: 0rem;
+  padding: 1%;
+  background-color: transparent;
+  width: 100%;
+  color:#fcfbfe;
+  margin-top: 25px;
+  font-family: 'DotGothic16';
+  font-size:18px;
+}
+
+.Contact button{
+  border: 1px solid #ba1e68; 
+  background-color: #ba1e68;
+  font-family: 'DotGothic16';
+  font-size:18px;
+  color:#fcfbfe;
+  padding: 5px 25px;
+  border-radius: 25px;
+  float: right;
+  margin-top: 25px;
+}
+
+.Contact button:hover{
+  background-color: transparent;
+}

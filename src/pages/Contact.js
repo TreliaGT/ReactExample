@@ -33,6 +33,7 @@ class Contact extends Component {
                         <input type="Email" placeholder="Email"/>
                         <input type="text" placeholder="Phone"/>
                         <textarea placeholder="Message"></textarea>
+                        <button type="submit">Send</button>
                     </form>
                 </div>
               </section>
