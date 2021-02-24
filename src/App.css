@@ -53,7 +53,7 @@ body{
 
 h1:after  , h2:after  , h3:after{
   background: none repeat scroll 0 0 #ba1e68;
-  bottom: -10px;
+  bottom: -18px;
   content: "";
   display: block;
   height: 5px;
@@ -111,20 +111,13 @@ footer .Top .Socials ul li{
 }
 .Nav .NavLink {
   padding: 10px 17px;
-  background-color: #252528;
+  border-bottom: 2px solid #ba1e68;
 }
 
 .Nav .NavLink:hover {
-  background-color: #3e3e3e;
+  border-bottom: 5px solid #ba1e68;
 }
 
-.Nav .NavLink.NavFirst{
-  border-radius: 25px 0px 0px 25px;
-}
-
-.Nav .NavLink.NavLast {
-  border-radius: 0px 25px 25px 0px;
-}
 
 .Nav ul {
   list-style-type: none;
@@ -374,7 +367,7 @@ section.thirdSection {
     width: 48%;
     margin-right: 1%;
     display: inline-block;
-    padding-bottom:4&;
+    padding-bottom:4%;
 }
 
 .project div {
@@ -460,7 +453,7 @@ section.aboutUs .Text{
 
 }
 
-.testim .wrap {
+.testim .wrap , .Contact {
   position: relative;
   width: 100%;
   max-width: 1020px;
@@ -1177,6 +1170,11 @@ animation: fadeIn ease 2s;
 
 .Contact {
   width: 50%;
+  padding-top: 4%;
+}
+
+.Contact form{
+  padding: 0 2%;;
 }
 
 .Contact input[type="text"], .Contact input[type="email"], .Contact textarea {
@@ -1208,4 +1206,16 @@ animation: fadeIn ease 2s;
 
 .Contact button:hover{
   background-color: transparent;
+}
+
+.Contact input[type="text"]::-webkit-input-placeholder , .Contact input[type="email"]::-webkit-input-placeholder, .Contact textarea::-webkit-input-placeholder{ /* Edge */
+  color:#fcfbfe;
+}
+
+.Contact input[type="text"]:-ms-input-placeholder , .Contact input[type="email"]:-ms-input-placeholder, .Contact textarea:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+  color:#fcfbfe;
+}
+
+.Contact input[type="text"]::placeholder , .Contact input[type="email"]::placeholder , .Contact textarea::placeholder {
+  color:#fcfbfe;
 }
