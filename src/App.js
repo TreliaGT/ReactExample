@@ -4,6 +4,7 @@ import HomePage from './pages/Home';
 import NotFound from './pages/Error404';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
 import {
     BrowserRouter as Router,
     Switch,
@@ -50,6 +51,9 @@ class App extends Component {
               </Route>
               <Route path="/portfolio">
                 <Portfolio/>
+              </Route>
+              <Route path="/contact">
+                <Contact/>
               </Route>
               <Route path="/">
                 <HomePage/>
