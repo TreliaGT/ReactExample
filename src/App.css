@@ -206,7 +206,7 @@ footer .Top .Socials ul li{
 }
 
 .into-Text{
-  width:1400px;
+  max-width:1400px;
   margin:auto;
   padding: 4% 0;
   display: flex;
@@ -1174,7 +1174,7 @@ animation: fadeIn ease 2s;
 }
 
 .Contact form{
-  padding: 0 2%;;
+  padding: 0 2%;
 }
 
 .Contact input[type="text"], .Contact input[type="email"], .Contact textarea {
@@ -1218,4 +1218,44 @@ animation: fadeIn ease 2s;
 
 .Contact input[type="text"]::placeholder , .Contact input[type="email"]::placeholder , .Contact textarea::placeholder {
   color:#fcfbfe;
+}
+
+
+@media(max-width:1570px){
+  .BannerImage{display:none;}
+}
+
+@media(max-width:1305px){
+  .lang {
+    display: inline-block;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .Projects{
+    width: 80%;
+    margin: auto;
+  }
+
+  .into-Text .image{
+    display:none;
+  }
+  .into-Text .Text{
+    width:80%;
+    margin: auto;
+  }
+}
+
+@media(max-width:768px){
+  .project{
+    width: 100% ;
+    margin: 0px;
+  }
+
+  .introText{
+    left: 6%;
+
+  }
+  .fourthSection{display: none;}
 }

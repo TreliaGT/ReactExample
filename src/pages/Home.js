@@ -94,7 +94,7 @@ class Home extends Component {
                                   Lemon drops chocolate bar tootsie roll. Chupa chups halvah cotton candy danish liquorice.
                                 </p>
                             </div>
-                            <div class="BannerImage">
+                            <div className="BannerImage">
                               <img src={image}/>
                             </div>
                             <div id="stars-wrapper" className="stars-wrapper"></div>
@@ -104,8 +104,8 @@ class Home extends Component {
                             <FontAwesomeIcon icon={faChevronDown}/>
                             </a>
                         </section>
-                        <section class="into-Text">
-                        <div class="image">
+                        <section className="into-Text" id="Secondsection">
+                        <div className="image">
                                  <img src={image}/>
                             </div>
                           <div className="Text">
@@ -118,7 +118,7 @@ class Home extends Component {
                                 </p>
                             </div>
                           </section>
-                        <section className="Secondsection" id="Secondsection">
+                        <section className="Secondsection" >
                           <div className="Data">
                           <div className="dashboard">
                           <div className="lang">
