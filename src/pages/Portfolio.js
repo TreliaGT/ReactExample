@@ -111,6 +111,7 @@ class App extends Component {
         return (
             <div className="InteralPage">
                 <section className="smBanner">
+                    <div className="stars"></div>
                   <h1>Portfolio </h1>
                 </section>
                 <section className="aboutUs">
