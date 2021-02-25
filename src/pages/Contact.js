@@ -9,6 +9,53 @@ import '../App.css';
 
 
 class Contact extends Component {
+    constructor(props) {
+        super(props);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.state = {
+            name: '',
+            email: '',
+            phone: '',
+            message: '',
+          };
+      
+      }
+
+      handleInputChange(event) {
+        const target = event.target;
+        const value = target.value;
+        const name = target.name;
+
+        switch(name) {
+            case "name":
+                this.setState({
+                    name: value
+                    });
+            break;
+            case "email":
+                this.setState({
+                    email: value
+                    });
+            break;
+            case 'phone':
+                this.setState({
+                    phone: value
+                    });
+            break;
+            case 'message':
+                this.setState({
+                    message: value
+                    });
+            break;
+        }
+      }
+
+    
+    handleSubmit(event) {
+        alert('A name was submitted: ' + this.state.name);
+        event.preventDefault();
+      }
 
     render() {
         return (
@@ -28,11 +75,11 @@ class Contact extends Component {
                    </p>
                 </div>
                 <div className="Contact">
-                    <form>
-                        <input type="text" placeholder="Name"/>
-                        <input type="Email" placeholder="Email"/>
-                        <input type="text" placeholder="Phone"/>
-                        <textarea placeholder="Message"></textarea>
+                    <form onSubmit={this.handleSubmit}>
+                        <input type="text" placeholder="Name" value={this.state.name} name="name" onChange={this.handleInputChange}/>
+                        <input type="Email" placeholder="Email" value={this.state.email} name="email" onChange={this.handleInputChange}/>
+                        <input type="text" placeholder="Phone" value={this.state.phone} name="phone" onChange={this.handleInputChange}/>
+                        <textarea placeholder="Message" value={this.state.message} name="message" onChange={this.handleInputChange}></textarea>
                         <button type="submit">Send</button>
                     </form>
                 </div>
