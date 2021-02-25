@@ -1192,7 +1192,7 @@ animation: fadeIn ease 2s;
   font-size:18px;
 }
 
-.Contact button{
+.Contact button {
   border: 1px solid #ba1e68; 
   background-color: #ba1e68;
   font-family: 'DotGothic16';
@@ -1203,8 +1203,18 @@ animation: fadeIn ease 2s;
   float: right;
   margin-top: 25px;
 }
+#menubutton{
+  border: 1px solid #ba1e68; 
+background-color: #ba1e68;
+font-family: 'DotGothic16';
+font-size:18px;
+color:#fcfbfe;
+border-radius: 25px;
+float: right;
+padding: 0px;
+}
 
-.Contact button:hover{
+.Contact button:hover ,  #menubutton:hover{
   background-color: transparent;
 }
 
@@ -1245,11 +1255,61 @@ animation: fadeIn ease 2s;
     width:80%;
     margin: auto;
   }
+
+  .aboutUs{
+      flex-direction: column;  
+  }
+  .aboutUs .Text{
+    width: 80%;
+    margin: auto;
+  }
+
+  .tabsinfo {
+    width: 90%;
+  }
 }
 
-@media(max-width:768px){
+@media(max-width:1153px){
+  .tabinfo{
+    flex-direction: column;  
+  }
+  .tab {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-right: 2%;
+  } 
+  .tab button.active::before {
+    background-color: #ba1e68;
+    width: 10px;
+    content: "";
+    display: block;
+    height: 10px;
+    position: relative;
+    left: -15px;
+    top: 17px;
+  }
+  .tabcontent {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .image{margin:auto}
+}
+
+#menubutton{display:none}
+
+
+@media(max-width:959px){
+.testim .wrap {
+    position: relative;
+    width: 80%;
+}
+  .tabcontent img{
+      display:none
+  }
   .project{
-    width: 100% ;
+    width: 100% !important;
     margin: 0px;
   }
 
@@ -1258,4 +1318,38 @@ animation: fadeIn ease 2s;
 
   }
   .fourthSection{display: none;}
+
+
+  #menubutton{display:block}
+  .Nav{display: none;
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+  }
+  .Nav ul li {
+    color: #fcfbfe;
+    display: block;
+    padding: 13px;
+  }
+  header {
+    width: 80%;
+}
+  .menu{
+    float: right;
+    justify-content: right;
+    text-align: right;
+    width: 80%;
+  }
+}
+
+#show{display:block!important;}
+#hide{display: none!important;}
+
+
+@media(max-width:810px){
+  .thirdSection h2::after {
+    left: 33%;
+  }
 }

@@ -13,10 +13,36 @@ import {
   } from "react-router-dom";
 import logo from './logo.svg';
 import { AnimatePresence } from "framer-motion";
+import  {FontAwesomeIcon}  from '@fortawesome/react-fontawesome';
+import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 class App extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+      super(props);
+      this.Menuclick = this.Menuclick.bind(this);
+        this.state = {
+          visibility: '',
+        };
+    }
+
+    Menuclick(event){
+        switch(this.state.visibility) {
+          case 'hide':
+            this.setState({
+              visibility: 'show'
+              });
+          break;
+          case 'show':
+            this.setState({
+              visibility: 'hide'
+              });
+          break;
+          case '':
+            this.setState({
+              visibility: 'show'
+            });
+            break;
+        }
     }
 
     render() {
@@ -27,7 +53,9 @@ class App extends Component {
               <div className="Logo">
                   <img src={logo}/>
               </div>
-              <div className="Nav">
+              <div className="menu">
+                <button id="menubutton" className="menubutton" onClick={this.Menuclick}><FontAwesomeIcon icon={faBars}/> </button>
+              <div className="Nav " id={this.state.visibility}>
                 <ul>
                   <li>
                     <Link to="/" className="NavLink NavFirst">Home</Link>
@@ -42,6 +70,7 @@ class App extends Component {
                     <Link to="/Contact" className="NavLink NavLast">Contact</Link>
                   </li>
                 </ul>
+              </div>
               </div>
             </header>
             <AnimatePresence>
