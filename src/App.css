@@ -1273,6 +1273,13 @@ padding: 0px;
   .tabinfo{
     flex-direction: column;  
   }
+  .thirdSection h2::after , .wrap h2:after{
+    left: 16%!important;
+    margin-bottom: 10%!important;
+  }
+
+  .aboutUs .image{display: none;}
+
   .tab {
     width: 100%;
     overflow: hidden;
@@ -1297,7 +1304,9 @@ padding: 0px;
   .image{margin:auto}
 }
 
-#menubutton{display:none}
+#menubutton{display:none;
+  max-height: 55px;
+}
 
 
 @media(max-width:959px){
@@ -1322,11 +1331,11 @@ padding: 0px;
 
   #menubutton{display:block}
   .Nav{display: none;
-    animation: fadeIn ease 2s;
-    -webkit-animation: fadeIn ease 2s;
-    -moz-animation: fadeIn ease 2s;
-    -o-animation: fadeIn ease 2s;
-    -ms-animation: fadeIn ease 2s;
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
   }
   .Nav ul li {
     color: #fcfbfe;
@@ -1341,6 +1350,22 @@ padding: 0px;
     justify-content: right;
     text-align: right;
     width: 80%;
+  }
+  .Nav {
+    position: absolute;
+    background-color: #070717;
+    width: auto;
+    left: 0;
+    height: 100%;
+  }
+  .Nav ul li {
+    padding: 15px 27px;
+    border-bottom: 2px solid #ba1e68;
+    text-align: center;
+  }
+  .Nav .NavLink{border: none !important;}
+  .Logo {
+    width: 27%;
   }
 }
 
